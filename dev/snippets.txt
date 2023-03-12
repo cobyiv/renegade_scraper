@@ -1,0 +1,61 @@
+SCRAPY CLI
+> cd product_scraper
+>scrapy crawl rj -o output.json
+
+
+SCRAPY SHELL
+
+Cd to scrapy project folder
+>scrapy shell
+>fetch(“www.website.com/url/slug”)
+>test_1 = response.xpath('/html/head/title').re(r'title>(.*)</title')[0]
+>test_1
+
+Git
+>git add .
+>git commit -m “name of commit”
+>git push origin rj-cv-1
+Note: rj-cv-1 is name of branch we are working on.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Xpath + Regex Testing
+
+//*[@id="product_detail_form"]/div[3]/fieldset/div/select
+
+<span id="unit-display" class="animated fadeIn">/Price Set (1 IN STOCK)</span>
+<h4>This product is out of stock</h4>
+
+/html/body/section/div[1]/div[3]/div/div/div/div[4]/div/div/h4
+
+/html/body/section/div[1]/div[3]/div/div/div/div[3]/form/div[2]/div/div/div/p/span[2]
+
+
+/html/body/section/div[1]/div[3]/div/div/div/div[3]
+
+response.xpath('/html/body/section/div[1]/div[3]/div/div/div/div[3]').re(r'(.*STOCK.*|.*stock.*|.*Stock.*)')
+
+scrapy crawl <spider_name> -o items.json
+
+/html/body/section/div[1]/div[3]/div/div/div/div[4]/div/div/h4
+
+response.xpath('/html/body/section/div[1]/div[3]').re(r'>(.*STOCK.*|.*stock.*|.*Stock.*)</')
+
+response.xpath('/html/body/section/div[1]/div[3]').re(r'>(.*STOCK.?|.*stock.?|.*Stock.?)<')[0]
+
+
+/html/head/title
+
