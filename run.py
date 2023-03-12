@@ -90,7 +90,7 @@ filtered_data = data[data['Item'].str.contains('STOCK|stock|Stock')]
 filtered_data = filtered_data.sort_values(by='Title')
 
 # Extract numerical values from item column using regular expressions
-filtered_data['Stock Quantity'] = filtered_data['Item'].apply(lambda x: re.findall(r'\((\d+)\s*[Ii][Nn]\s*[Ss][Tt][Oo][Cc][Kk]\)', x)).apply(lambda x: int(x[0]) if len(x) > 0 else 0)
+filtered_data['Stock Quantity'] = filtered_data['Item'].apply(lambda x: re.findall(r'\(\s*(\d+)\s*[Ii][Nn]\s*[Ss][Tt][Oo][Cc][Kk]\)', x)).apply(lambda x: int(x[0]) if len(x) > 0 else 0)
 
 # Set Stock Quantity to 0 if 'OUT OF STOCK' or 'Out of Stock' is present in item column
 filtered_data.loc[filtered_data['Item'].str.contains('OUT OF STOCK|Out of Stock|out of stock'), 'Stock Quantity'] = 0

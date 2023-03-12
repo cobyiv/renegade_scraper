@@ -1,0 +1,13 @@
+12	12 Panel Synthetic Leather Ball (67mm 110 grams) 	Bbags:PVS67	pink (110 grams) ( 1 pink in stock)	0	synthetic leather ball | teaching Juggling Ball | numbers juggling balls 
+14	12 Panel Synthetic Leather Ball (67mm 110 grams) 	Bbags:PVS67	white ( 110 gram) (2 white in stock)	0	synthetic leather ball | teaching Juggling Ball | numbers juggling balls 
+600	Silicone contact poi knob (6mm hole)	PSK	yellow (2 PAIR IN STOCK)	0	contact poi | poi knob | poi parts
+441	Radfactor Hand Sticks Wood Silicone Thick (49cm)	DEV:RFHWT	yellow (3 pair in stock)	0	Hand Sticks| flower stick | devil stick
+447	Radfactor Hand Sticks Wood Silicone Thick (49cm)	DEV:RFHWT	green (3 pair in stock)	0	Hand Sticks| flower stick | devil stick
+144	Eight Ring, Regular, Skinny, Baby, Eight-ball, and Iso-8	ManRflat:RIN8T	iso eight ring pair ( only one ring in stock) ($69.00)	0	eight ring | isolation ring | 8 ring
+101	Contact Poi 80mm, 90mm, 100mm	CONPOI	orange 80mm ( 2 pair in stock) ($35.00)	0	Contact Poi | static poi | poi balls
+94	Contact Poi 80mm, 90mm, 100mm	CONPOI	white 80mm (1 pair in stock) ($35.00)	0	Contact Poi | static poi | poi balls
+96	Contact Poi 80mm, 90mm, 100mm	CONPOI	blue 80mm (1 pair in stock) ($35.00)	0	Contact Poi | static poi | poi balls
+97	Contact Poi 80mm, 90mm, 100mm	CONPOI	yellow 90mm (1 pair in stock) ($40.00)	0	Contact Poi | static poi | poi balls
+99	Contact Poi 80mm, 90mm, 100mm	CONPOI	orange 100mm (1 pair in stock) ($45.00)	0	Contact Poi | static poi | poi balls
+100	Contact Poi 80mm, 90mm, 100mm	CONPOI	orange 90mm ( 1 pair in stock) ($40.00)	0	Contact Poi | static poi | poi balls
+101	Contact Poi 80mm, 90mm, 100mm	CONPOI	orange 80mm ( 2 pair in stock) ($35.00)	0	Contact Poi | static poi | poi balls
