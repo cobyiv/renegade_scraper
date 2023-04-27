@@ -103,5 +103,36 @@ filtered_data.index += 1
 now = datetime.datetime.now()
 date_string = now.strftime("%Y.%m.%d-%I.%M%p")
 name = f'{date_string}_Renegade Juggling Inventory Scrape.csv'
+csv_file_path = os.path.join('output', 'csv', name)
+filtered_data.to_csv(csv_file_path)
 
-filtered_data.to_csv(os.path.join('output', 'csv', name))
+
+# SEND EMAIL
+from datetime import datetime
+from dotenv import load_dotenv
+import ast
+import os
+import csv
+load_dotenv()
+from gmail import GoogleMailClient
+
+# Get current date and time
+now = datetime.now()
+# Format date and time as string in desired format
+formatted_date = now.strftime("%m.%d.%Y %H:%M")
+subject_string = f"Renegade Scraper Data // {formatted_date}"
+
+renegade_email = GoogleMailClient({
+    'sender_email':os.getenv('SENDER_EMAIL'),
+    'recipient_email':ast.literal_eval(os.getenv('RECIPIENT_EMAIL')),
+    'password':os.getenv('GMAIL_PASSWORD'),
+    'content' : "See",
+    'message_id':'001',
+    'subject':subject_string
+})
+
+renegade_email.add_attachment(csv_file_path, name)
+renegade_email.send_email()
+print("SCRAPER EMAIL SENT!")
+os.remove(csv_file_path)
+print(f"{name} file deleted")
