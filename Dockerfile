@@ -18,4 +18,4 @@ RUN ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
 RUN echo "America/Los_Angeles" > /etc/timezone
 
 # Start the Python app
-CMD ["/bin/bash"]
+CMD ["python","run.py"]

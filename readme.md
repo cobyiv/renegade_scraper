@@ -16,3 +16,6 @@ The renegade scraper uses a python package called scrapy to crawl a website and 
 7. `pip install -r requirements.txt`
 8. The main file is run in run.py
 9. the `dev` folder has files used for the development of this script
+
+## 🚀 Run in Docker Container
+`sudo ./run_docker.sh`
