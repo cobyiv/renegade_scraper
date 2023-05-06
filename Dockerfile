@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y cron
 RUN touch /var/log/cron.log
 
 # Establish the Cron Job
-RUN echo "00 16 * * 5 root cd /app && /usr/local/bin/python /app/run.py >> /var/log/cron.log 2>&1" > /etc/cron.d/my-cron
+RUN echo "55 23 * * 5 root cd /app && /usr/local/bin/python /app/run.py >> /var/log/cron.log 2>&1" > /etc/cron.d/my-cron
 
 # # Install the required Python packages
 RUN pip install -r requirements.txt
